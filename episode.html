@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div  class="row">
+      {% for character in episodios %}
+
+          <div class="col-sm-3 col-6">
+              <img src="{{episode.image}}" alt="{{episode.name}}"
+              class="img-fluid img-thumbnail" />
+
+                <h3 class="h5">{{episode.name}}</h3>
+                <p>
+                  <a href="/episode/{{episode.id}}"  class="btn btn-primary">ver 
+                    perfil</a>
+                </p>
+
+           </div>
+
+      {%  endfor %}
+</div>
+{% endblock %}
